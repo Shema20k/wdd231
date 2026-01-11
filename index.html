@@ -2,13 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>WDD 231 - Course Home</title>
-  <meta name="description" content="WDD 231 Course Home Page">
+  <title>WDD 231 – Course Home | Shema Darcy</title>
+
+  <meta name="description" content="Course homepage for WDD 231 by Shema Darcy featuring projects, certificate courses, resources, and dynamic content built with HTML, CSS, and JavaScript.">
   <meta name="author" content="Shema Darcy">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/large.css">
@@ -19,15 +21,17 @@
 <body>
 
 <header>
-  <img src="images/ehh.png" alt="Site Logo">
-  <span>Shema Darcy</span>
-  <button id="menu" aria-label="Toggle Navigation">&#9776;</button>
+  <div class="branding">
+    <img src="images/logo.png" alt="Site Logo">
+    <span>Shema Darcy</span>
+  </div>
+  <button id="menu">&#9776;</button>
 </header>
 
-<nav>
-  <a href="#" class="active">Home</a>
-  <a href="chamber/index.html">Chamber</a>
-  <a href="final/index.html">Final</a>
+<nav id="navMenu">
+  <a href="index.html" class="active">Home</a>
+  <a href="#">Chamber</a>
+  <a href="#">Final</a>
 </nav>
 
 <main>
@@ -35,7 +39,7 @@
 
   <section>
     <h2>About Me</h2>
-    <p>Welcome to my WDD 231 course homepage. Here you can see my course progress, completed courses, and resources to help with my studies.</p>
+    <p>Welcome to my WDD 231 course homepage. This site showcases my learning progress, projects, and resources.</p>
   </section>
 
   <section>
@@ -47,19 +51,20 @@
       <button data-filter="cse">CSE</button>
     </div>
 
-    <p>Total Credits: <span id="totalCredits"></span></p>
+    <p class="credits">Total Credits: <span id="totalCredits">0</span></p>
+
     <div id="courseCards"></div>
   </section>
 
   <section>
     <h2>Resources</h2>
-    <p>Helpful links and study materials for WDD 231.</p>
+    <p>Helpful links, documentation, and references for web development.</p>
   </section>
 </main>
 
 <footer>
   <div class="social">
-    <a href="https://github.com/shema20k" target="_blank">GitHub</a>
+    <a href="https://github.com/Shema20k" target="_blank">GitHub</a>
     <a href="https://linkedin.com/in/shemadarcy" target="_blank">LinkedIn</a>
   </div>
 

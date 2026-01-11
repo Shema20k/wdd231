@@ -1,4 +1,3 @@
-// Responsive menu toggle
 const menu = document.getElementById("menu");
 const nav = document.querySelector("nav");
 
@@ -6,11 +5,9 @@ menu.addEventListener("click", () => {
   nav.classList.toggle("open");
 });
 
-// Dynamic year and last modified
 document.getElementById("year").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent = document.lastModified;
 
-// Course Data
 const courses = [
   { code: "WDD 130", name: "Web Fundamentals", credits: 3, completed: true },
   { code: "WDD 131", name: "Dynamic Web", credits: 3, completed: true },
@@ -37,10 +34,8 @@ function displayCourses(list) {
   totalCredits.textContent = list.reduce((sum, c) => sum + c.credits, 0);
 }
 
-// Initial display
 displayCourses(courses);
 
-// Filtering buttons
 document.querySelectorAll(".filters button").forEach(btn => {
   btn.addEventListener("click", () => {
     const type = btn.dataset.filter;
