@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WDD 231 - Course Home</title>
+  <meta name="description" content="WDD 231 Course Home Page">
+  <meta name="author" content="Shema Darcy">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/large.css">
+
+  <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+
+<header>
+  <img src="images/ehh.png" alt="Site Logo">
+  <span>Shema Darcy</span>
+  <button id="menu" aria-label="Toggle Navigation">&#9776;</button>
+</header>
+
+<nav>
+  <a href="#" class="active">Home</a>
+  <a href="chamber/index.html">Chamber</a>
+  <a href="final/index.html">Final</a>
+</nav>
+
+<main>
+  <h1>Home</h1>
+
+  <section>
+    <h2>About Me</h2>
+    <p>Welcome to my WDD 231 course homepage. Here you can see my course progress, completed courses, and resources to help with my studies.</p>
+  </section>
+
+  <section>
+    <h2>Certificate Courses</h2>
+
+    <div class="filters">
+      <button data-filter="all">All</button>
+      <button data-filter="wdd">WDD</button>
+      <button data-filter="cse">CSE</button>
+    </div>
+
+    <p>Total Credits: <span id="totalCredits"></span></p>
+    <div id="courseCards"></div>
+  </section>
+
+  <section>
+    <h2>Resources</h2>
+    <p>Helpful links and study materials for WDD 231.</p>
+  </section>
+</main>
+
+<footer>
+  <div class="social">
+    <a href="https://github.com/shema20k" target="_blank">GitHub</a>
+    <a href="https://linkedin.com/in/shemadarcy" target="_blank">LinkedIn</a>
+  </div>
+
+  <p>&copy; <span id="year"></span> Shema Darcy | Rwanda</p>
+  <p id="lastModified"></p>
+</footer>
+
+</body>
+</html>

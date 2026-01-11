@@ -1,0 +1,126 @@
+/* Reset box-sizing */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f7fb;
+  color: #222;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: #1f3c88;
+  color: #fff;
+  padding: 0.75rem 1rem;
+}
+
+header img {
+  height: 42px;
+  width: auto;
+}
+
+header span {
+  font-size: 1.2rem;
+  font-weight: 700;
+  flex-grow: 1;
+}
+
+#menu {
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Navigation */
+nav {
+  display: none;
+  background-color: #162447;
+}
+
+nav.open {
+  display: block;
+}
+
+nav a {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: #e43f5a;
+}
+
+/* Main */
+main {
+  padding: 1rem;
+}
+
+section {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+/* Course Filters */
+.filters {
+  margin: 0.5rem 0 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.filters button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #1f3c88;
+  color: white;
+  cursor: pointer;
+}
+
+.filters button:hover {
+  background-color: #e43f5a;
+}
+
+/* Course Cards */
+#courseCards {
+  display: grid;
+  gap: 1rem;
+}
+
+.course {
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.completed {
+  background-color: #d4edda;
+  border-color: #b7dfc3;
+}
+
+/* Footer */
+footer {
+  background-color: #1f3c88;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+footer a {
+  color: #ffd369;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
