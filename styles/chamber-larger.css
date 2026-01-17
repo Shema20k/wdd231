@@ -1,0 +1,9 @@
+@media (min-width: 32rem) {
+  #members.grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .navigation li {
+    margin: 0 1rem;
+  }
+}
