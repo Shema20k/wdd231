@@ -2,7 +2,7 @@
   "members": [
     {
       "name": "Alpha Tech",
-      "address": "123 Main St",
+      "address": "123 Loss St",
       "phone": "+250 788 111 111",
       "website": "https://example1.com",
       "image": "favicon.png",
@@ -10,7 +10,7 @@
     },
     {
       "name": "Green Market",
-      "address": "45 Market Rd",
+      "address": "45 Gross Rd",
       "phone": "+250 788 222 222",
       "website": "https://example2.com",
       "image": "favicon.png",
@@ -18,7 +18,7 @@
     },
     {
       "name": "Sunrise Bakery",
-      "address": "78 Sunrise Ave",
+      "address": "78 Sundown Ave",
       "phone": "+250 788 333 333",
       "website": "https://example3.com",
       "image": "favicon.png",
@@ -26,7 +26,7 @@
     },
     {
       "name": "City Fitness",
-      "address": "12 Power St",
+      "address": "12 Power ranger st",
       "phone": "+250 788 444 444",
       "website": "https://example4.com",
       "image": "favicon.png",
@@ -34,7 +34,7 @@
     },
     {
       "name": "Blue Travel",
-      "address": "9 Ocean Dr",
+      "address": "9 Kivu Dr",
       "phone": "+250 788 555 555",
       "website": "https://example5.com",
       "image": "favicon.png",
@@ -42,7 +42,7 @@
     },
     {
       "name": "Smart Accounting",
-      "address": "34 Finance Blvd",
+      "address": "34 Finance Kivu",
       "phone": "+250 788 666 666",
       "website": "https://example6.com",
       "image": "favicon.png",
@@ -50,7 +50,7 @@
     },
     {
       "name": "Creative Studio",
-      "address": "88 Design Ln",
+      "address": "88 Design Kivu",
       "phone": "+250 788 777 777",
       "website": "https://example7.com",
       "image": "favicon.png",
