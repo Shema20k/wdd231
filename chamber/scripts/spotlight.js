@@ -1,8 +1,8 @@
 fetch("data/members.json")
   .then(response => response.json())
   .then(data => {
-    const eligible = data.members.filter(m => m.membership >= 2);
-    const selected = eligible.sort(() => 0.5 - Math.random()).slice(0, 3);
+    const eligible = data.members.filter(m => m.membership >= 2); // Gold or Silver
+    const selected = eligible.sort(() => 0.5 - Math.random()).slice(0, 3); // Pick 2–3 randomly
     const container = document.getElementById("spotlight-cards");
 
     selected.forEach(member => {
@@ -22,4 +22,7 @@ fetch("data/members.json")
 
       container.appendChild(card);
     });
+  })
+  .catch(error => {
+    console.error("Spotlight fetch error:", error);
   });
