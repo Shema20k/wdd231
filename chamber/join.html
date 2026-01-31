@@ -2,16 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Join | City Chamber of Commerce</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Apply to join the City Chamber of Commerce">
+
+  <title>Join the City Chamber of Commerce</title>
+
+  <meta name="description" content="Apply to join the City Chamber of Commerce and gain access to networking opportunities, business promotion, events, and professional growth resources.">
   <meta name="author" content="Shema Darcy">
 
+  <link rel="icon" href="images/favicon.ico">
+
+  <meta property="og:title" content="Join the City Chamber of Commerce Today">
+  <meta property="og:description" content="Become a member of the City Chamber of Commerce and enjoy exclusive benefits, business exposure, networking events, and professional development.">
+  <meta property="og:image" content="https://shema20k.github.io/wdd231/chamber/images/og-image.png">
+  <meta property="og:url" content="https://shema20k.github.io/wdd231/chamber/join.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles/chamber.css">
-  <script src="scripts/chamber.js" defer></script>
+  <link rel="stylesheet" href="styles/chamber-larger.css">
+
+  <script src="scripts/join.js" defer></script>
 </head>
 
 <body>
+
 <header>
   <nav>
     <ul class="navigation">
@@ -24,102 +40,74 @@
   </nav>
 </header>
 
-<main class="join-layout">
+<main>
 
-<form method="get" action="thankyou.html" class="join-form">
-  <h2>Membership Application</h2>
+  <h1>Join the City Chamber of Commerce</h1>
 
-  <label>
-    First Name
-    <input type="text" name="fname" required title="First Name" autocomplete="given-name">
-  </label>
+  <form method="get" action="thankyou.html">
 
-  <label>
-    Last Name
-    <input type="text" name="lname" required title="Last Name" autocomplete="family-name">
-  </label>
+    <label>
+      First Name
+      <input type="text" name="firstName" title="First Name" autocomplete="given-name" required>
+    </label>
 
-  <label>
-    Organizational Title
-    <input type="text" name="orgtitle" title="Organizational Title"
-      autocomplete="organization-title"
-      pattern="[A-Za-z\s\-]{7,}">
-  </label>
+    <label>
+      Last Name
+      <input type="text" name="lastName" title="Last Name" autocomplete="family-name" required>
+    </label>
 
-  <label>
-    Email
-    <input type="email" name="email" required title="Email Address"
-      autocomplete="email" placeholder="example@email.com">
-  </label>
+    <label>
+      Organizational Title
+      <input type="text" name="orgTitle" title="Organizational Title" autocomplete="organization-title"
+             pattern="[A-Za-z\s\-]{7,}">
+    </label>
 
-  <label>
-    Mobile Phone
-    <input type="tel" name="phone" required title="Mobile Phone"
-      autocomplete="tel">
-  </label>
+    <label>
+      Email Address
+      <input type="email" name="email" title="Email Address" autocomplete="email"
+             placeholder="example@email.com" required>
+    </label>
 
-  <label>
-    Organization Name
-    <input type="text" name="business" required title="Business Name"
-      autocomplete="organization">
-  </label>
+    <label>
+      Mobile Phone
+      <input type="tel" name="phone" title="Mobile Phone" autocomplete="tel" required>
+    </label>
 
-  <label>
-    Membership Level
-    <select name="membership" required title="Membership Level">
-      <option value="">Select a level</option>
-      <option value="np">NP Membership</option>
-      <option value="bronze">Bronze</option>
-      <option value="silver">Silver</option>
-      <option value="gold">Gold</option>
-    </select>
-  </label>
+    <label>
+      Organization Name
+      <input type="text" name="organization" title="Organization Name" autocomplete="organization" required>
+    </label>
 
-  <label>
-    Business Description
-    <textarea name="description" title="Business Description"></textarea>
-  </label>
+    <label>
+      Membership Level
+      <select name="membership" title="Membership Level" required>
+        <option value="">Select a level</option>
+        <option value="np">NP Membership</option>
+        <option value="bronze">Bronze Membership</option>
+        <option value="silver">Silver Membership</option>
+        <option value="gold">Gold Membership</option>
+      </select>
+    </label>
 
-  <input type="hidden" name="timestamp" id="timestamp">
+    <label>
+      Organization Description
+      <textarea name="description" title="Organization Description"></textarea>
+    </label>
 
-  <input type="submit" value="Apply for Membership">
-</form>
+    <input type="hidden" name="timestamp" id="timestamp">
 
-<section class="membership-cards">
-  <div class="card animate">
-    <h3>NP Membership</h3>
-    <p>Free for non-profits</p>
-    <button data-modal="np">View Benefits</button>
-  </div>
+    <button type="submit">Apply for Membership</button>
 
-  <div class="card animate">
-    <h3>Bronze</h3>
-    <p>Basic exposure</p>
-    <button data-modal="bronze">View Benefits</button>
-  </div>
-
-  <div class="card animate">
-    <h3>Silver</h3>
-    <p>More visibility</p>
-    <button data-modal="silver">View Benefits</button>
-  </div>
-
-  <div class="card animate">
-    <h3>Gold</h3>
-    <p>Maximum benefits</p>
-    <button data-modal="gold">View Benefits</button>
-  </div>
-</section>
-
-<dialog id="np"><p>No fee, basic listing.</p><button>Close</button></dialog>
-<dialog id="bronze"><p>Events + directory listing.</p><button>Close</button></dialog>
-<dialog id="silver"><p>Training + advertising.</p><button>Close</button></dialog>
-<dialog id="gold"><p>Spotlights + premium perks.</p><button>Close</button></dialog>
+  </form>
 
 </main>
 
 <footer>
+  <p>City, Country | ☎ +250 785 055 518 | ✉ info@chamber.org</p>
   <p>&copy; <span id="year"></span> City Chamber of Commerce</p>
+  <p>Shema Darcy | WDD 231</p>
+  <p>Last Modified: <span id="lastModified"></span></p>
 </footer>
+
 </body>
 </html>
