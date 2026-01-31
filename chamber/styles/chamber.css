@@ -1,0 +1,80 @@
+body {
+  font-family: Roboto, Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f6f8;
+}
+
+header, footer {
+  background-color: #1f4e79;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.navigation {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0;
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+}
+
+.navigation .active {
+  text-decoration: underline;
+}
+
+.join-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+@media (min-width: 768px) {
+  .join-layout {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+.join-form label {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.join-form input,
+.join-form select,
+.join-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.membership-cards {
+  display: grid;
+  gap: 1rem;
+}
+
+.card {
+  background: white;
+  padding: 1rem;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.animate {
+  animation: fadeIn 1.2s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+dialog {
+  padding: 1.5rem;
+  border-radius: 6px;
+}
