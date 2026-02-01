@@ -63,7 +63,7 @@ input, select, textarea {
 }
 
 button {
-  background-color: #c85c00;
+  background-color: #9f3f00;
   color: #ffffff;
   font-weight: bold;
   border: none;
@@ -73,5 +73,5 @@ button {
 }
 
 button:hover {
-  background-color: #a84d00;
+  background-color: #7f3200;
 }
