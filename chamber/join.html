@@ -6,13 +6,13 @@
 
   <title>Join the City Chamber of Commerce</title>
 
-  <meta name="description" content="Apply to join the City Chamber of Commerce and gain access to networking opportunities, business promotion, events, and professional growth resources.">
+  <meta name="description" content="Apply to join the City Chamber of Commerce and gain access to networking, promotion, events, and business growth opportunities.">
   <meta name="author" content="Shema Darcy">
 
   <link rel="icon" href="images/favicon.ico">
 
   <meta property="og:title" content="Join the City Chamber of Commerce Today">
-  <meta property="og:description" content="Become a member of the City Chamber of Commerce and enjoy exclusive benefits, business exposure, networking events, and professional development.">
+  <meta property="og:description" content="Become a member of the City Chamber of Commerce and enjoy networking, promotion, events, and professional growth.">
   <meta property="og:image" content="https://shema20k.github.io/wdd231/chamber/images/og-image.png">
   <meta property="og:url" content="https://shema20k.github.io/wdd231/chamber/join.html">
 
@@ -41,46 +41,43 @@
 </header>
 
 <main>
-
   <h1>Join the City Chamber of Commerce</h1>
 
   <form method="get" action="thankyou.html">
 
     <label>
       First Name
-      <input type="text" name="firstName" title="First Name" autocomplete="given-name" required>
+      <input type="text" name="firstName" autocomplete="given-name" required>
     </label>
 
     <label>
       Last Name
-      <input type="text" name="lastName" title="Last Name" autocomplete="family-name" required>
+      <input type="text" name="lastName" autocomplete="family-name" required>
     </label>
 
     <label>
       Organizational Title
-      <input type="text" name="orgTitle" title="Organizational Title" autocomplete="organization-title"
-             pattern="[A-Za-z\s\-]{7,}">
+      <input type="text" name="orgTitle" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}">
     </label>
 
     <label>
       Email Address
-      <input type="email" name="email" title="Email Address" autocomplete="email"
-             placeholder="example@email.com" required>
+      <input type="email" name="email" autocomplete="email" placeholder="example@email.com" required>
     </label>
 
     <label>
       Mobile Phone
-      <input type="tel" name="phone" title="Mobile Phone" autocomplete="tel" required>
+      <input type="tel" name="phone" autocomplete="tel" required>
     </label>
 
     <label>
       Organization Name
-      <input type="text" name="organization" title="Organization Name" autocomplete="organization" required>
+      <input type="text" name="organization" autocomplete="organization" required>
     </label>
 
     <label>
       Membership Level
-      <select name="membership" title="Membership Level" required>
+      <select name="membership" required>
         <option value="">Select a level</option>
         <option value="np">NP Membership</option>
         <option value="bronze">Bronze Membership</option>
@@ -91,7 +88,7 @@
 
     <label>
       Organization Description
-      <textarea name="description" title="Organization Description"></textarea>
+      <textarea name="description"></textarea>
     </label>
 
     <input type="hidden" name="timestamp" id="timestamp">
@@ -99,7 +96,6 @@
     <button type="submit">Apply for Membership</button>
 
   </form>
-
 </main>
 
 <footer>

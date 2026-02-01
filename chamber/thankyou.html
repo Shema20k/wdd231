@@ -2,30 +2,44 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Thank You | City Chamber</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You | City Chamber</title>
 
+  <meta name="description" content="Thank you for joining the City Chamber of Commerce. Review the details you submitted in your membership application.">
+
+  <meta property="og:title" content="Thank You for Joining the City Chamber of Commerce">
+  <meta property="og:description" content="Your membership application has been successfully submitted. Review your submitted details and next steps.">
+  <meta property="og:image" content="https://yourdomain.com/images/chamber-og.png">
+  <meta property="og:url" content="https://yourdomain.com/chamber/thankyou.html">
+
+  <link rel="icon" href="images/favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/chamber.css">
-  <script src="scripts/chamber.js" defer></script>
+
+  <script src="scripts/thankyou.js" defer></script>
 </head>
 
 <body>
-<header>
-  <nav>
-    <ul class="navigation">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="join.html">Join</a></li>
-    </ul>
-  </nav>
-</header>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="join.html">Join</a>
+    </nav>
+  </header>
 
-<main class="thankyou">
-  <h2>Thank You for Joining!</h2>
-  <div id="form-data"></div>
-</main>
+  <main>
+    <h1>Thank You for Joining!</h1>
 
-<footer>
-  <p>&copy; <span id="year"></span> City Chamber of Commerce</p>
-</footer>
+    <section class="thankyou-card" id="form-data"></section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> City Chamber of Commerce</p>
+  </footer>
 </body>
 </html>
