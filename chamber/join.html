@@ -103,6 +103,7 @@
   </form>
 
   <section class="membership-cards">
+
     <div class="membership-card">
       <h3>NP Membership</h3>
       <button type="button" data-modal="npModal">View Benefits</button>
@@ -122,30 +123,31 @@
       <h3>Gold Membership</h3>
       <button type="button" data-modal="goldModal">View Benefits</button>
     </div>
+
   </section>
 
-  <dialog id="npModal">
-    <h3>NP Membership Benefits</h3>
+  <dialog id="npModal" aria-labelledby="npTitle">
+    <h3 id="npTitle">NP Membership Benefits</h3>
     <p>No fee, community exposure, and basic event access.</p>
-    <button>Close</button>
+    <button type="button">Close</button>
   </dialog>
 
-  <dialog id="bronzeModal">
-    <h3>Bronze Membership Benefits</h3>
+  <dialog id="bronzeModal" aria-labelledby="bronzeTitle">
+    <h3 id="bronzeTitle">Bronze Membership Benefits</h3>
     <p>Training sessions, advertising options, and networking events.</p>
-    <button>Close</button>
+    <button type="button">Close</button>
   </dialog>
 
-  <dialog id="silverModal">
-    <h3>Silver Membership Benefits</h3>
+  <dialog id="silverModal" aria-labelledby="silverTitle">
+    <h3 id="silverTitle">Silver Membership Benefits</h3>
     <p>Homepage spotlight, discounts, and priority training.</p>
-    <button>Close</button>
+    <button type="button">Close</button>
   </dialog>
 
-  <dialog id="goldModal">
-    <h3>Gold Membership Benefits</h3>
+  <dialog id="goldModal" aria-labelledby="goldTitle">
+    <h3 id="goldTitle">Gold Membership Benefits</h3>
     <p>Premium exposure, VIP events, and maximum advertising reach.</p>
-    <button>Close</button>
+    <button type="button">Close</button>
   </dialog>
 
 </main>
