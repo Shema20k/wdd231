@@ -6,13 +6,13 @@
 
   <title>Join the City Chamber of Commerce</title>
 
-  <meta name="description" content="Apply to join the City Chamber of Commerce and gain access to networking, promotion, events, and business growth opportunities.">
+  <meta name="description" content="Apply to join the City Chamber of Commerce to access networking, advertising, training, and business growth opportunities.">
   <meta name="author" content="Shema Darcy">
 
   <link rel="icon" href="images/favicon.ico">
 
   <meta property="og:title" content="Join the City Chamber of Commerce Today">
-  <meta property="og:description" content="Become a member of the City Chamber of Commerce and enjoy networking, promotion, events, and professional growth.">
+  <meta property="og:description" content="Become a City Chamber member and unlock networking events, advertising opportunities, and professional development.">
   <meta property="og:image" content="https://shema20k.github.io/wdd231/chamber/images/og-image.png">
   <meta property="og:url" content="https://shema20k.github.io/wdd231/chamber/join.html">
 
@@ -57,22 +57,28 @@
 
     <label>
       Organizational Title
-      <input type="text" name="orgTitle" title="Organizational Title" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}">
+      <input type="text" name="orgTitle" title="Organizational Title"
+             autocomplete="organization-title"
+             pattern="[A-Za-z\s\-]{7,}">
     </label>
 
     <label>
       Email Address
-      <input type="email" name="email" title="Email Address" autocomplete="email" placeholder="example@email.com" required>
+      <input type="email" name="email" title="Email Address"
+             autocomplete="email"
+             placeholder="example@email.com" required>
     </label>
 
     <label>
       Mobile Phone
-      <input type="tel" name="phone" title="Mobile Phone" autocomplete="tel" required>
+      <input type="tel" name="phone" title="Mobile Phone"
+             autocomplete="tel" required>
     </label>
 
     <label>
       Organization Name
-      <input type="text" name="organization" title="Organization Name" autocomplete="organization" required>
+      <input type="text" name="organization" title="Organization Name"
+             autocomplete="organization" required>
     </label>
 
     <label>
@@ -94,15 +100,58 @@
     <input type="hidden" name="timestamp" id="timestamp">
 
     <button type="submit">Apply for Membership</button>
-
   </form>
+
+  <section class="membership-cards">
+    <div class="membership-card">
+      <h3>NP Membership</h3>
+      <button type="button" data-modal="npModal">View Benefits</button>
+    </div>
+
+    <div class="membership-card">
+      <h3>Bronze Membership</h3>
+      <button type="button" data-modal="bronzeModal">View Benefits</button>
+    </div>
+
+    <div class="membership-card">
+      <h3>Silver Membership</h3>
+      <button type="button" data-modal="silverModal">View Benefits</button>
+    </div>
+
+    <div class="membership-card">
+      <h3>Gold Membership</h3>
+      <button type="button" data-modal="goldModal">View Benefits</button>
+    </div>
+  </section>
+
+  <dialog id="npModal">
+    <h3>NP Membership Benefits</h3>
+    <p>No fee, community exposure, and basic event access.</p>
+    <button>Close</button>
+  </dialog>
+
+  <dialog id="bronzeModal">
+    <h3>Bronze Membership Benefits</h3>
+    <p>Training sessions, advertising options, and networking events.</p>
+    <button>Close</button>
+  </dialog>
+
+  <dialog id="silverModal">
+    <h3>Silver Membership Benefits</h3>
+    <p>Homepage spotlight, discounts, and priority training.</p>
+    <button>Close</button>
+  </dialog>
+
+  <dialog id="goldModal">
+    <h3>Gold Membership Benefits</h3>
+    <p>Premium exposure, VIP events, and maximum advertising reach.</p>
+    <button>Close</button>
+  </dialog>
+
 </main>
 
 <footer>
-  <p>City, Country | ☎ +250 785 055 518 | ✉ info@chamber.org</p>
   <p>&copy; <span id="year"></span> City Chamber of Commerce</p>
-  <p>Shema Darcy | WDD 231</p>
-  <p>Last Modified: <span id="lastModified"></span></p>
 </footer>
 
 </body>
