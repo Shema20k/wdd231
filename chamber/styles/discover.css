@@ -1,0 +1,146 @@
+:root {
+  --primary: #1b5e20;
+  --accent: #b34700;
+  --bg: #f4f6f5;
+  --card-bg: #ffffff;
+  --text: #2b2b2b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--primary);
+}
+
+.visit-message {
+  text-align: center;
+  background: #e8f5e9;
+  color: #1b5e20;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  margin-bottom: 2rem;
+}
+
+.cards-container {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.card {
+  background: var(--card-bg);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.card h2 {
+  font-size: 1.1rem;
+  padding: 1rem;
+  background: #f1f8f4;
+  color: var(--primary);
+}
+
+.card figure {
+  width: 100%;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.card address {
+  font-style: normal;
+  font-size: 0.9rem;
+  padding: 0.75rem 1rem 0;
+  color: #555;
+}
+
+.card p {
+  padding: 0.75rem 1rem 1rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  flex-grow: 1;
+}
+
+.learn-btn {
+  background: var(--accent);
+  color: #ffffff;
+  border: none;
+  margin: 1rem;
+  padding: 0.6rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.learn-btn:hover {
+  background: #8c3600;
+}
+
+/* Grid Areas */
+@media (max-width: 640px) {
+  .cards-container {
+    grid-template-areas:
+      "a" "b" "c" "d"
+      "e" "f" "g" "h";
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .cards-container {
+    grid-template-areas:
+      "a b"
+      "c d"
+      "e f"
+      "g h";
+  }
+}
+
+@media (min-width: 1025px) {
+  .cards-container {
+    grid-template-areas:
+      "a b c d"
+      "e f g h";
+  }
+
+  .card img {
+    transition: transform 0.35s ease;
+  }
+
+  .card:hover img {
+    transform: scale(1.06);
+  }
+}
+
+.card:nth-child(1){grid-area:a}
+.card:nth-child(2){grid-area:b}
+.card:nth-child(3){grid-area:c}
+.card:nth-child(4){grid-area:d}
+.card:nth-child(5){grid-area:e}
+.card:nth-child(6){grid-area:f}
+.card:nth-child(7){grid-area:g}
+.card:nth-child(8){grid-area:h}
