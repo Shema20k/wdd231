@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Membership</h1>
+        <button id="menuBtn">☰</button>
+        <nav id="navMenu">
+            <a href="index.html">Home</a>
+            <a href="opportunities.html">Opportunities</a>
+            <a href="membership.html" aria-current="page">Membership</a>
+        </nav>
+    </header>
+
+    <main>
+        <button onclick="modal.showModal()">View Premium Benefits</button>
+
+        <dialog id="modal">
+            <h2>Premium Benefits</h2>
+            <p>Unlimited access to exclusive global opportunities.</p>
+            <button onclick="modal.close()">Close</button>
+        </dialog>
+
+        <h2>Subscribe</h2>
+        <form action="form-action.html" method="GET">
+            <label>Name</label>
+            <input name="name" required>
+
+            <label>Email</label>
+            <input name="email" type="email" required>
+
+            <label>Plan</label>
+            <select name="plan">
+                <option>Free</option>
+                <option>Premium</option>
+            </select>
+
+            <button type="submit">Subscribe</button>
+        </form>
+    </main>
+
+    <script src="js/form.js"></script>
+</body>
+</html>

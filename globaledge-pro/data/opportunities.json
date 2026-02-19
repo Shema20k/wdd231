@@ -1,0 +1,162 @@
+[
+  {
+    "title": "Google Software Internship",
+    "organization": "Google",
+    "country": "USA 🇺🇸",
+    "type": "Internship",
+    "deadline": "2026-04-30",
+    "link": "https://careers.google.com"
+  },
+  {
+    "title": "UN Youth Fellowship",
+    "organization": "United Nations",
+    "country": "Switzerland 🇨🇭",
+    "type": "Fellowship",
+    "deadline": "2026-05-20",
+    "link": "https://careers.un.org"
+  },
+  {
+    "title": "DAAD Scholarship",
+    "organization": "DAAD",
+    "country": "Germany 🇩🇪",
+    "type": "Scholarship",
+    "deadline": "2026-06-15",
+    "link": "https://www.daad.de"
+  },
+  {
+    "title": "Microsoft Explore Internship",
+    "organization": "Microsoft",
+    "country": "USA 🇺🇸",
+    "type": "Internship",
+    "deadline": "2026-04-10",
+    "link": "https://careers.microsoft.com"
+  },
+  {
+    "title": "Chevening Scholarship",
+    "organization": "UK Government",
+    "country": "United Kingdom 🇬🇧",
+    "type": "Scholarship",
+    "deadline": "2026-07-01",
+    "link": "https://www.chevening.org"
+  },
+  {
+    "title": "World Bank Internship",
+    "organization": "World Bank",
+    "country": "USA 🇺🇸",
+    "type": "Internship",
+    "deadline": "2026-05-30",
+    "link": "https://www.worldbank.org"
+  },
+  {
+    "title": "Japan MEXT Scholarship",
+    "organization": "Government of Japan",
+    "country": "Japan 🇯🇵",
+    "type": "Scholarship",
+    "deadline": "2026-06-30",
+    "link": "https://www.studyinjapan.go.jp"
+  },
+  {
+    "title": "Meta Data Fellowship",
+    "organization": "Meta",
+    "country": "USA 🇺🇸",
+    "type": "Fellowship",
+    "deadline": "2026-05-05",
+    "link": "https://www.metacareers.com"
+  },
+  {
+    "title": "African Union Internship",
+    "organization": "AU",
+    "country": "Ethiopia 🇪🇹",
+    "type": "Internship",
+    "deadline": "2026-04-20",
+    "link": "https://au.int"
+  },
+  {
+    "title": "Mastercard Foundation Scholarship",
+    "organization": "Mastercard",
+    "country": "Canada 🇨🇦",
+    "type": "Scholarship",
+    "deadline": "2026-07-15",
+    "link": "https://mastercardfdn.org"
+  },
+  {
+    "title": "Amazon Tech Internship",
+    "organization": "Amazon",
+    "country": "USA 🇺🇸",
+    "type": "Internship",
+    "deadline": "2026-05-12",
+    "link": "https://www.amazon.jobs"
+  },
+  {
+    "title": "Erasmus Mundus Scholarship",
+    "organization": "European Union",
+    "country": "Europe 🇪🇺",
+    "type": "Scholarship",
+    "deadline": "2026-03-30",
+    "link": "https://erasmus-plus.ec.europa.eu"
+  },
+  {
+    "title": "Tesla Engineering Internship",
+    "organization": "Tesla",
+    "country": "USA 🇺🇸",
+    "type": "Internship",
+    "deadline": "2026-05-25",
+    "link": "https://www.tesla.com/careers"
+  },
+  {
+    "title": "Google Africa Fellowship",
+    "organization": "Google",
+    "country": "Kenya 🇰🇪",
+    "type": "Fellowship",
+    "deadline": "2026-06-10",
+    "link": "https://careers.google.com"
+  },
+  {
+    "title": "Oxford Clarendon Scholarship",
+    "organization": "Oxford University",
+    "country": "United Kingdom 🇬🇧",
+    "type": "Scholarship",
+    "deadline": "2026-07-30",
+    "link": "https://www.ox.ac.uk"
+  },
+  {
+    "title": "UNICEF Internship",
+    "organization": "UNICEF",
+    "country": "Global 🌍",
+    "type": "Internship",
+    "deadline": "2026-05-01",
+    "link": "https://www.unicef.org"
+  },
+  {
+    "title": "MIT Research Fellowship",
+    "organization": "MIT",
+    "country": "USA 🇺🇸",
+    "type": "Fellowship",
+    "deadline": "2026-06-05",
+    "link": "https://web.mit.edu"
+  },
+  {
+    "title": "Australia Awards Scholarship",
+    "organization": "Australian Govt",
+    "country": "Australia 🇦🇺",
+    "type": "Scholarship",
+    "deadline": "2026-08-01",
+    "link": "https://www.australiaawards.gov.au"
+  },
+  {
+    "title": "IBM Global Internship",
+    "organization": "IBM",
+    "country": "USA 🇺🇸",
+    "type": "Internship",
+    "deadline": "2026-04-18",
+    "link": "https://www.ibm.com/careers"
+  },
+  {
+    "title": "Harvard Leadership Fellowship",
+    "organization": "Harvard University",
+    "country": "USA 🇺🇸",
+    "type": "Fellowship",
+    "deadline": "2026-07-20",
+    "link": "https://www.harvard.edu"
+  }
+]
