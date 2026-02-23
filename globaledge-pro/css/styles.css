@@ -43,6 +43,15 @@ nav a {
     text-decoration: none;
 }
 
+.btn {
+    display: inline-block;
+    background: var(--accent);
+    color: white;
+    padding: .6rem 1rem;
+    text-decoration: none;
+    border-radius: var(--radius);
+}
+
 #menuBtn {
     font-size: 1.5rem;
     background: none;

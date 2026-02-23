@@ -21,9 +21,7 @@ function display(list) {
             <p><strong>Type:</strong> ${o.type}</p>
             <p><strong>Deadline:</strong> ${o.deadline}</p>
 
-            <a href="${o.link}" target="_blank">
-                <button>Apply</button>
-            </a>
+            <a href="${o.link}" target="_blank" class="btn">Apply</a>
 
             <button onclick="save('${o.title}')">Save ❤️</button>
         </div>
@@ -38,7 +36,9 @@ document.getElementById("search").addEventListener("input", e => {
 });
 
 window.save = title => {
-    localStorage.setItem("favorite", title);
+    let saved = JSON.parse(localStorage.getItem("favorites")) || [];
+    saved.push(title);
+    localStorage.setItem("favorites", JSON.stringify(saved));
     alert("Saved!");
 };
 

@@ -18,3 +18,12 @@ if (results) {
         <p><strong>Plan:</strong> ${params.get("plan")}</p>
     `;
 }
+
+const modal = document.getElementById("modal");
+const openModal = document.getElementById("openModal");
+const closeModal = document.getElementById("closeModal");
+
+if (modal && openModal && closeModal) {
+    openModal.addEventListener("click", () => modal.showModal());
+    closeModal.addEventListener("click", () => modal.close());
+}
